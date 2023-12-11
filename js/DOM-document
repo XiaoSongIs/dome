@@ -1,1 +1,13 @@
-// DOM 文档对象模式
+// DOM         Document object Model
+
+1、Creating a node
+  document.createElement(element);
+2、Add node
+  (1) node.appendChild();
+  (2) node.insertBefore();
+3、Delete a node
+  node.removeChild();
+4、Clone a node
+  node.cloneNode();
+
+
