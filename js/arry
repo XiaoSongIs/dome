@@ -1,1 +1,77 @@
+ var arry = [{ name: '张三', age: 10 }, { name: '李四', age: 11 }, { name: '王五', age: 12 }]
+    // 1、遍历数组
+
+    // for
+    // for(var i = 0 ; i < arry.length; i++){
+    //     console.log(arry[i])
+    // }
+
+    //  for  in
+    // for(var item in arry){
+    //     console.log(arry[item])
+    // }
+
+    // forEach   退出循环需要 throw 得加 try catch 
+    // try {
+    //     arry.forEach((item) => {
+    //         if (item.name == "王五") {
+    //             throw undefined;
+    //         }
+    //     })
+    // } catch {
+
+    // }
+
+    // map
+    // arry.map((item)=>{
+    //     console.log(item)
+    // })
+
+
+
+
+    //2、遍历映射
+
+    // var newArry = arry.map(item=>({content:item}))
+    // var newArry = [];
+    // for(var item in arry){
+    //     newArry.push(arry[item])
+    // }
+    // for(var item in newArry){
+    //     console.log(newArry[item])
+    // }
+
+
+    //3、多层数据结构的处理 
+    // flat() 把多维度的数组减少 1 个或多个维度 
+    // var arryTwo =  [1, 2, [3, 4], [5, [6, 7], 8, 9], 10];
+    // console.log(arryTwo.flat(2));
+
+    // const data = [
+    //     {
+    //         label: "文件",
+    //         items: [
+    //             { label: "打开", id: 11 },
+    //             { label: "保存", id: 12 },
+    //             { label: "关闭", id: 13 }
+    //         ]
+    //     },
+    //     {
+    //         label: "帮助",
+    //         items: [
+    //             { label: "查看帮助", id: 91 },
+    //             { label: "关于", id: 92 }
+    //         ]
+    //     }
+    // ];
+
+    // map + flat
+    // var arry = data.map(item=>({item:item})).flat()
+    // console.log(arry);
+
+
+    // flatMap
+    
+    // var arrys = data.flatMap(item=>item);
+    // console.log(arrys);
 
