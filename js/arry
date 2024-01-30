@@ -75,3 +75,6 @@
     // var arrys = data.flatMap(item=>item);
     // console.log(arrys);
 
+
+    //将根据,或者; 将字符串转化为数组
+    .split(',')
